@@ -10,6 +10,5 @@ class Solution(object):
         for i in range(len(nums)):
             if val in self.nums:
               self.nums.remove(self.val)
-        print(self.nums)
         return len(self.nums)
         
