@@ -11,4 +11,5 @@ class Solution(object):
             if val in self.nums:
               self.nums.remove(self.val)
         print(self.nums)
+        return len(self.nums)
         
