@@ -9,7 +9,7 @@ class Solution(object):
         self.needle=needle
         if self.needle in haystack:
             index=haystack.find(needle)
-            return index
+            
         else:
             return -1    
-        
+        return index
