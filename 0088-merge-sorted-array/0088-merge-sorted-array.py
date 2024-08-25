@@ -8,14 +8,8 @@ class Solution(object):
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
         
-        dummy=[0]*(m+n)
-        for i in range(len(dummy)):
-         if i<m:
-          dummy[i]=nums1[i]
-         elif i>m-1:
-          dummy[i]=nums2[len(dummy)-i-1]
-        for i in range(len(nums1)): 
-          nums1[i]=dummy[i]
+        for i in range(len(nums2)):
+          nums1[m+i]=nums2[i]
         nums1.sort()
         
         
