@@ -5,13 +5,7 @@ class Solution(object):
         :type k: int
         :rtype: None Do not return anything, modify nums in-place instead.
         """
-        k=k%len(nums)
-        key=k
-        b=[0]*len(nums)
-        c=nums[-key:]
-        for i in range(len(c)):
-         b[i]=c[i]
-        for i in range(len(nums)-key):
-         b[i+key]=nums[i]
+        k = k % len(nums)  # handle cases where k > len(nums)
+        b = nums[-k:] + nums[:-k]
         for i in range(len(nums)):
-            nums[i]=b[i]
+            nums[i] = b[i]
