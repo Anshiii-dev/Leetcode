@@ -5,6 +5,7 @@ class Solution(object):
         :type k: int
         :rtype: None Do not return anything, modify nums in-place instead.
         """
+        k=k%len(nums)
         key=k
         b=[0]*len(nums)
         c=nums[-key:]
