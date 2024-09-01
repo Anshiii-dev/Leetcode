@@ -5,19 +5,17 @@ class Solution(object):
         :rtype: str
         """
         if not strs:
-            return ""
-        
-        common = strs[0]
-        Len = len(strs)
-        
-        for i in range(1, Len):
-            val = strs[i]
-            j = 0
-            while j < len(common) and j < len(val) and common[j] == val[j]:
-                j += 1
-            common = common[:j]
+            return""
+        common=strs[0]   
+        for i in range(1,len(strs)):
+            x=strs[i]
+            j=0
+            while j<len(common) and j<len(x) and common[j]==x[j]:
+                j+=1
+            common=common[:j]
+            
             if not common:
-                break
+                return "" 
+        return common  
         
-        return common
-
+        
