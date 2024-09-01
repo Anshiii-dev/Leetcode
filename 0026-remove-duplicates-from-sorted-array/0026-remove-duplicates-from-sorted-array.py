@@ -1,4 +1,5 @@
-def removeDuplicates(self, nums: List[int]):
+class Solution(object):
+    def removeDuplicates(self, nums):
 		i = 1
 		while i < len(nums):
 			if nums[i] == nums[i - 1]:
@@ -6,3 +7,4 @@ def removeDuplicates(self, nums: List[int]):
 			else:
 				i += 1
 		return len(nums)
+        
