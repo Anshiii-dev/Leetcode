@@ -4,6 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+        if not nums:
+            return 0
         i=0
         while i <len(nums):
             j=i+1
