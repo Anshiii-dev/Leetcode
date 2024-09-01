@@ -9,7 +9,7 @@ class Solution(object):
             j=i+1
             while j <len(nums):
                 if nums[i]==nums[j]:
-                    nums.remove(nums[i])
+                    nums.remove(nums[j])
                 else:
                     j+=1
             i+=1
