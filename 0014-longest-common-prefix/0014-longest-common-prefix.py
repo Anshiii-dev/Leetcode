@@ -11,6 +11,7 @@ class Solution(object):
         common = strs[0]
 
         # Iterate through each string in the list starting from the second
+       
         for i in range(1, len(strs)):
             x = common
             y = strs[i]
