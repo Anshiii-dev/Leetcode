@@ -10,9 +10,10 @@ class Solution(object):
             for j in range(1,len(nums)):
                 if nums[i]+nums[j]==target:
                   if i or j not in index:
-                    index.append(i)
-                    index.append(j)
-                    return index 
-                    break
+                    if i!=j:
+                      index.append(i)
+                      index.append(j)
+                      return index 
+                      break
                    
                     
