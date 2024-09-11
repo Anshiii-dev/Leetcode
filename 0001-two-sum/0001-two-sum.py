@@ -9,8 +9,6 @@ class Solution(object):
         for i in range(len(nums)):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
-                  if i or j not in index:
-                    # if i!=j:
                       index.append(i)
                       index.append(j)
                       return index 
