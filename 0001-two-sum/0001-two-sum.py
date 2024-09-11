@@ -14,6 +14,6 @@ class Solution(object):
                       index.append(i)
                       index.append(j)
                       return index 
-                      break
+
                    
                     
