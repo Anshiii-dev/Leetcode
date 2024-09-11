@@ -15,7 +15,7 @@ class Solution(object):
             else:
                 triplet = [nums[i], nums[left], nums[right]]
                 if triplet not in result:
-                    result.append(triplet)
+                result.append(triplet)
                 left += 1
                 right -= 1
     return result
